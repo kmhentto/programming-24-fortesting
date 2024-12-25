@@ -1,4 +1,4 @@
-import { withPrefix } from 'gatsby'
+import { Link, withPrefix } from 'gatsby'
 // ... other imports
 
 // Update navigation links
