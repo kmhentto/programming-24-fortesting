@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import { Button } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
 
+import Logo from "./Logo"
 import TreeView from "./TreeView"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
@@ -25,61 +26,51 @@ const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 1.5em;
 `
 
-const StyledSidebar = styled.div`
-  background-color: #f7f7f9;
-  padding: 2rem;
-  height: 100%;
-  width: 20rem;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-
-  scroll-behavior: smooth;
-
-  a:focus {
-    outline: 2px solid #006fe6;
-    outline-offset: 2px;
-  }
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-  }
-`
-
-const Navigation = styled.nav`
+const SidebarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
+  background-color: white;
+
+  ${(props) =>
+    !props.mobileMenuOpen &&
+    `
+      display: none;
+    `}
+
+  @media only screen and (min-width: ${SMALL_MEDIUM_BREAKPOINT}) {
+    height: 100%;
+    width: ${LARGE_SIDEBAR_WIDTH};
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    overflow-y: scroll;
+    display: flex;
+  }
+  @media only screen and (max-width: ${MEDIUM_LARGE_BREAKPOINT}) {
+    width: ${MEDIUM_SIDEBAR_WIDTH};
+    font-size: 0.85rem;
+  }
+  @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+`
+const LogoContainer = styled.div`
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 `
 
-const NavItem = styled(Link)`
-  color: #333;
-  text-decoration: none;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background-color: #e7e7e9;
-    transform: translateX(4px);
-  }
-
-  &[aria-current="page"] {
-    background-color: #006fe6;
-    color: white;
-  }
+const TreeViewContainer = styled.nav`
+  flex: 1;
+  margin-bottom: 1em;
 `
 
 const Brand = styled.div`
@@ -132,15 +123,12 @@ const Sidebar = (props) => {
 
   edges = edges
     .filter((o) => !o.hide_in_sidebar)
-    .sort((a, b) => {
-      if (a.sidebar_priority !== b.sidebar_priority) {
-        return (a.sidebar_priority || 10000) - (b.sidebar_priority || 10000);
-      }
-      return a.title.localeCompare(b.title, undefined, {
+    .sort((a, b) =>
+      a.title.localeCompare(b.title, undefined, {
         numeric: true,
         sensitivity: "base",
-      });
-    })
+      }),
+    )
 
   let coursePartEdges = edges.filter(
     (o) => !o.information_page && !o.course_info_page && !o.upcoming,
@@ -199,12 +187,15 @@ const Sidebar = (props) => {
           )}
         </Button>
       </MenuExpanderWrapper>
-      <StyledSidebar>
+      <SidebarContainer mobileMenuOpen={props.mobileMenuOpen}>
         <Brand>{CourseSettings.name}</Brand>
-        <Navigation role="navigation" aria-label="Main navigation">
+        <TreeViewContainer>
           <TreeView data={content} />
-        </Navigation>
-      </StyledSidebar>
+        </TreeViewContainer>
+        <LogoContainer>
+          <Logo />
+        </LogoContainer>
+      </SidebarContainer>
     </MobileWrapperOrFragment>
   )
 }

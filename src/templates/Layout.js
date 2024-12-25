@@ -61,64 +61,6 @@ const SidebarPush = styled.div`
   }
 `
 
-const ContentWrapper = styled.div`
-  margin-left: 20rem;  // Match sidebar width
-  padding: 2rem;
-  min-height: 100vh;
-
-  // Improve readability
-  max-width: 1200px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-size: 16px;
-
-  // Better spacing for content
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-  }
-
-  // Improve link accessibility
-  a {
-    color: #006fe6;
-    text-decoration: underline;
-
-    &:hover {
-      color: #004c9e;
-    }
-
-    &:focus {
-      outline: 2px solid #006fe6;
-      outline-offset: 2px;
-    }
-  }
-
-  // Better code block styling
-  pre {
-    background: #f7f7f9;
-    padding: 1.5rem;
-    border-radius: 6px;
-    overflow-x: auto;
-  }
-
-  // Improve table readability
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-
-    th, td {
-      padding: 0.75rem;
-      border: 1px solid #ddd;
-    }
-
-    th {
-      background: #f7f7f9;
-    }
-  }
-`
-
 class Layout extends React.Component {
   state = {
     mobileMenuOpen: false,
@@ -192,9 +134,9 @@ class Layout extends React.Component {
                 />
                 <SidebarPush>
                   <TopBar />
-                  <ContentWrapper>
+                  <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
                     {children}
-                  </ContentWrapper>
+                  </ContentArea>
                   <PointsBalloon />
                   <Footer />
                 </SidebarPush>
