@@ -1,9 +1,9 @@
 ---
-path: '/part-1'
-title: 'Part 1'
+path: '/github-copilot'
+title: 'GitHub Copilot'
 overview: true
 hidden: false
-sidebar_priority: 1000
+sidebar_priority: 7000
 ---
 
 <pages-in-this-section></pages-in-this-section>

@@ -1,7 +1,7 @@
 {
   "@context": "http://schema.org",
   "@type": "Course",
-  "name": "Programming MOOC 2022",
+  "name": "Programming MOOC 2025",
   "description": "",
   "provider": {
     "@type": "Organization",

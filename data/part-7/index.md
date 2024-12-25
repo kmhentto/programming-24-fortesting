@@ -2,8 +2,7 @@
 path: '/part-7'
 title: 'Part 7'
 overview: true
-hidden: false
-separator_after: "Advanced Course in Programming"
+hidden: true
 ---
 
 <pages-in-this-section></pages-in-this-section>
