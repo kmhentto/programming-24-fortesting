@@ -6,9 +6,6 @@ import { Link } from "gatsby"
 import { withTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import CourseSettings from "../../course-settings"
-
-import UHLogo from "../images/uh-logo.png"
-import MoocfiLogo from "../images/moocfi-logo-bw.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -85,18 +82,6 @@ const StyledCardContent = styled(CardContent)`
   justify-content: center;
 `
 
-const BrandsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  img {
-    height: 6rem;
-    width: auto;
-    margin: 1rem;
-  }
-`
-
 const Footer = ({ t }) => {
   const pagesContextValue = useContext(PagesContext)
   const filePath = pagesContextValue?.current?.filePath
@@ -136,7 +121,6 @@ const Footer = ({ t }) => {
               </a>
               .
             </ContentContainer>
-
             <ContentContainer>
               <Link to="/credits">{t("credits")}</Link>.
             </ContentContainer>
@@ -166,22 +150,6 @@ const Footer = ({ t }) => {
                 <StyledIcon icon={faYoutube} size="3x" />
               </a>
             </SocialContainer>
-            <BrandsContainer>
-              <a
-                href="https://helsinki.fi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img alt="Helsingin yliopisto" src={UHLogo} />
-              </a>
-              <a
-                href="https://mooc.fi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img alt="MOOC.fi" src={MoocfiLogo} />
-              </a>
-            </BrandsContainer>
           </StyledCardContent>
         </StyledCard>
       </FooterContent>
