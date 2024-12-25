@@ -4,7 +4,6 @@ import { graphql, StaticQuery } from "gatsby"
 import { Button } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
 
-import Logo from "./Logo"
 import TreeView from "./TreeView"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
@@ -59,13 +58,6 @@ const SidebarContainer = styled.div`
     max-width: 500px;
     margin: 0 auto;
   }
-`
-const LogoContainer = styled.div`
-  display: flex;
-  background-color: white;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
 `
 
 const TreeViewContainer = styled.nav`
@@ -192,9 +184,6 @@ const Sidebar = (props) => {
         <TreeViewContainer>
           <TreeView data={content} />
         </TreeViewContainer>
-        <LogoContainer>
-          <Logo />
-        </LogoContainer>
       </SidebarContainer>
     </MobileWrapperOrFragment>
   )

@@ -7,12 +7,7 @@ import { withTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import CourseSettings from "../../course-settings"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTwitter,
-  faFacebook,
-  faYoutube,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import Button from "./Button"
 import PagesContext from "../contexes/PagesContext"
 
@@ -124,32 +119,6 @@ const Footer = ({ t }) => {
             <ContentContainer>
               <Link to="/credits">{t("credits")}</Link>.
             </ContentContainer>
-            <SocialContainer>
-              <a
-                href="https://twitter.com/moocfi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("twitter-aria")}
-              >
-                <StyledIcon icon={faTwitter} size="3x" />
-              </a>
-              <a
-                href="https://www.facebook.com/Moocfi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("facebook-aria")}
-              >
-                <StyledIcon icon={faFacebook} size="3x" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCkHoQ5p9skFdyjrV3_tnUrA"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("facebook-aria")}
-              >
-                <StyledIcon icon={faYoutube} size="3x" />
-              </a>
-            </SocialContainer>
           </StyledCardContent>
         </StyledCard>
       </FooterContent>
