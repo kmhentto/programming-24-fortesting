@@ -6,6 +6,19 @@
 
 const path = require("path")
 
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+
+  // Check if it's a markdown file
+  if (node.internal.type === `MarkdownRemark`) {
+    // Add prefix to path in frontmatter
+    if (node.frontmatter && node.frontmatter.path) {
+      const newPath = `/programming-24${node.frontmatter.path}`
+      node.frontmatter.path = newPath
+    }
+  }
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage, createRedirect } = actions
 
