@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import rehypeReact from "rehype-react"
-import { navigate, Link } from "gatsby"
+import { navigate, Link, withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Layout from "./Layout"

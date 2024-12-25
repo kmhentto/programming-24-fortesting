@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import styled from "styled-components"
 import rehypeReact from "rehype-react"
 import { Helmet } from "react-helmet"
