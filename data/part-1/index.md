@@ -3,7 +3,6 @@ path: '/part-1'
 title: 'Part 1'
 overview: true
 hidden: false
-sidebar_priority: 1000
 ---
 
 <pages-in-this-section></pages-in-this-section>
