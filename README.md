@@ -17,4 +17,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## Course material
 
-The course material is licensed under a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) license. These course materials have been adapted to meet the needs of the Fundamentals of Programming course by [Deepak Chhetri][http//github.com/nygrenh](https://github.com/dipaish)
+The course material is licensed under a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) license. These course materials have been adapted to meet the needs of the Fundamentals of Programming course by [Deepak Chhetri](https://github.com/dipaish)
