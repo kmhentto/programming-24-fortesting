@@ -4,6 +4,7 @@ const blue = require("@material-ui/core/colors/red").default
 const CourseSettings = require('./course-settings')
 
 module.exports = {
+  pathPrefix: process.env.PREFIX_PATHS === 'true' ? `/${process.env.REPOSITORY_NAME}` : '/',
   siteMetadata: {
     title: CourseSettings.name,
     siteUrl: CourseSettings.siteUrl,
