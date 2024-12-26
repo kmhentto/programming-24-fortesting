@@ -2,13 +2,11 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
-import { Link } from "gatsby"
 import { withTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import CourseSettings from "../../course-settings"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import Button from "./Button"
 import PagesContext from "../contexes/PagesContext"
 
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -97,28 +95,6 @@ const Footer = ({ t }) => {
                 <div>{t("footer-src")}</div>
               </a>
             </GithubContainer>
-            <ButtonContainer>
-              <Button to="/report-issue">{t("footer-report-issue")}</Button>
-              {filePath && (
-                <Button to={`/edit-page?path=${filePath}`}>
-                  {t("footer-edit-page")}
-                </Button>
-              )}
-            </ButtonContainer>
-            <ContentContainer>
-              {t("makers")}{" "}
-              <a
-                href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("rage")}
-              </a>
-              .
-            </ContentContainer>
-            <ContentContainer>
-              <Link to="/credits">{t("credits")}</Link>.
-            </ContentContainer>
           </StyledCardContent>
         </StyledCard>
       </FooterContent>
