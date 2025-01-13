@@ -16,8 +16,6 @@ After this section
 
 </text-box>
 
-# Getting Started with GitHub
-
 ## What is GitHub?
 
 GitHub is a web-based platform that serves as a powerful tool for programmers and developers. It acts as a central hub for storing, managing, and collaborating on code. One of GitHub’s core features is **version control**, which allows you to track changes in your code, revert to previous versions, and collaborate seamlessly with others.
