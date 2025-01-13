@@ -1,9 +1,9 @@
 ---
-path: '/part-15/3-best-practices'
+path: '/part-7/3-copilot'
 title: 'Best Practices'
 hidden: false
 ---
 
-# Best Practices for Using GitHub Copilot
+## Getting started with CoPilot
 
 When working with GitHub Copilot...
