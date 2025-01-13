@@ -1,5 +1,5 @@
 ---
-path: '/part-15/1-introduction'
+path: '/part-7/1-introduction'
 title: 'Getting Started with GitHub '
 hidden: false
 ---
