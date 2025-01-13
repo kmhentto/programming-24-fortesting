@@ -17,8 +17,6 @@ After this section
 
 </text-box>
 
-## Integrating GitHub with VS Code
-
 To work more effectively with GitHub, it’s essential to integrate it with an IDE like **VS Code**. There are two ways to do this:
 
 ---
