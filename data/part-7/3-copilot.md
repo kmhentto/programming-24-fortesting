@@ -163,73 +163,40 @@ Write a Python function to sort a list of dictionaries by a key.
 
 Laurea University of Applied Sciences has provided ethical guidelines for students to ensure responsible AI use in their studies. Below are the key principles to follow:
 
+**Source:** [Laurea UAS AI Guidelines](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
+
 ### 1. Disclose AI Usage
 - Always mention if and how AI has been used in assignments or research.
 - Transparency in AI-assisted work maintains academic integrity.
 - Example: If AI was used to generate ideas or summaries, cite the tool in your references.
 
-**Source:** [Laurea UAS AI Guidelines](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
-
 ### 2. Adhere to Data Protection Policies
 - Ensure that using AI does not compromise personal data or violate GDPR.
 - Check the data privacy policies of AI tools before inputting sensitive information.
-
-**Source:** [Laurea UAS AI Ethics Policy](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
 
 ### 3. Maintain Academic Integrity
 - Do not submit AI-generated content as original work.
 - AI should support learning, not replace individual effort.
 - Example: If AI-generated content is paraphrased, it should be properly cited.
 
-**Source:** [Laurea UAS Code of Conduct](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
-
 ### 4. Verify AI-Generated Information
 - AI-generated content may contain errors or biases.
 - Cross-check AI outputs with reliable academic sources before using them.
 - Example: Do not rely on AI for fact-based research without verification.
-
-**Source:** [Laurea UAS Academic Integrity](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
 
 ### 5. Respect Copyright Laws
 - Ensure that AI-generated materials do not violate copyright laws.
 - Do not use AI tools to generate copyrighted or plagiarized content.
 - Example: When using AI-generated text, cite it as an external source.
 
-**Source:** [Laurea UAS Intellectual Property Policy](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
-
 ### 6. Follow Course-Specific AI Policies
 - Some courses may allow or restrict AI use differently.
 - Always check the guidelines provided by instructors before using AI.
-
-**Source:** [Laurea UAS Course Policies](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
 
 ### 7. Use AI to Enhance Learning, Not Replace Thinking
 - AI can be a great learning assistant but should not replace critical thinking.
 - Example: Use AI for proofreading, brainstorming, or code debugging, but ensure final submissions are your own work.
 
-**Source:** [Laurea UAS AI Learning Ethics](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
----
-
 ### 8. Avoid Unauthorized Recording with AI
 - Do not use AI tools to record virtual classes without consent.
 - Unauthorized recording violates data privacy and student rights.
-
-**Source:** [Laurea UAS Privacy & Ethics](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)
-
-
-For further details, read the full AI guidelines provided by Laurea UAS:
-
-**[Laurea UAS AI Ethics Policy](https://www.laurea.fi/en/degree_programmes/opiskelijana-laureassa/Utilisation-of-artificial-intelligence-in-teaching-and-studies-at-Laurea-University-of-Applied-Sciences/)**
