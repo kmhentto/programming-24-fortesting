@@ -52,38 +52,38 @@ This method involves installing Git on your local machine and using the **GitHub
    - Select **"Git: Clone"** and enter the repository URL from GitHub.  (Example Repo Link: https://github.com/Laurea-amk-Leppavaara/github-starter-space)
    - Choose a local folder to save the repository and start coding.
 
-📖 **For full instructions, refer to the official VS Code guide:**
-👉 [Collaborate on GitHub](https://code.visualstudio.com/docs/sourcecontrol/github)
+**Read More: For full instructions, refer to the official VS Code guide:**
+ [Collaborate on GitHub](https://code.visualstudio.com/docs/sourcecontrol/github)
 
 ---
 
-## ☁️ Method 2: Using GitHub Codespaces (Cloud-Based IDE)
+## Method 2: Using GitHub Codespaces (Cloud-Based IDE)
 **GitHub Codespaces** is a cloud-based development environment that allows you to code directly in your browser without installing anything locally.
 
 ### **Benefits of GitHub Codespaces:**
-✔ No installation required
-✔ Access your code from any device
-✔ Standardized development environment
+- No installation required
+- Access your code from any device
+- Standardized development environment
 
 ### **How to Use GitHub Codespaces:**
 1. Go to your GitHub repository.
 2. Click the **"Code"** button and select the **"Codespaces"** tab.
 3. Click **"New codespace"** to launch a fully configured VS Code environment in your browser.
 
-🎥 **Watch this short video on how to use GitHub Codespaces:**
+**Watch this short video on how to use GitHub Codespaces:**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SVaqUjBUdMA?si=nrMV2p9_zsw7Ry-d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-📖 **For more details, visit the official documentation:**
-👉 [GitHub Codespaces](https://docs.github.com/en/codespaces)
+ **For more details, visit the official documentation:**
+ [GitHub Codespaces](https://docs.github.com/en/codespaces)
 
 ---
 
-### 🛠️ **Which Method Should You Use?**
+###  **Which Method Should You Use?**
 - **Use the local method** if you prefer working locally and need **full control over your development environment**.
 - **Use GitHub Codespaces** if you want to **code from anywhere** without worrying about installations.
 
-## 🛠️ Basic Git Command Line Reference
+##  Basic Git Command Line Reference
 
 Here are some essential Git commands to get started:
 
@@ -108,5 +108,5 @@ Here are some essential Git commands to get started:
 | `git remote -v` | Show linked remote repositories |
 | `git reset --hard <commit-id>` | Reset to a specific commit (dangerous, use with caution) |
 
-📖 **For a complete list of Git commands, check the official Git documentation:**
-👉 [Git Command Reference](https://git-scm.com/docs)
+ **For a complete list of Git commands, check the official Git documentation:**
+ [Git Command Reference](https://git-scm.com/docs)
