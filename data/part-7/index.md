@@ -1,6 +1,6 @@
 ---
 path: '/part-7'
-title: 'Part 7 - GitHub Copilot'
+title: 'Part 7 - Version Control'
 overview: true
 hidden: false
 ---
