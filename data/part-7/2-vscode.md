@@ -32,22 +32,44 @@ This method involves installing Git on your local machine and using the **GitHub
      git --version
      ```
 
-2. **Install VS Code** (if not installed)
+2. **Configure Git**
+
+After installing Git, you need to configure Git by providing your full name and email address.You can start GitHub Desktop and configure using the graphical user interface as shown in the diagram below or use the command line.
+
+![GitHub account creation](configure1.png "Please click Create your free account or Sign in to GitHUb.com depending on your situation")
+![Configure Git](configure2.png "Please use your Full Name and email ")
+
+***Configure Git with command line***
+
+1. Open Git Bash.
+2. Set your username and email, which will be associated with your commits. Use these commands, replacing "Your Name" and "your.email@example.com" with your actual information:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email your.email@example.com
+```
+***Check your Git Configuration***
+
+```bash
+git config --list
+```
+
+3. **Install VS Code** (if not installed)
    - Download it from [Visual Studio Code](https://code.visualstudio.com/).
 
-3. **Install GitHub Pull Request and Issues Extension**
+4. **Install GitHub Pull Request and Issues Extension**
    - Open VS Code and go to the **Extensions Marketplace** (`Ctrl + Shift + X` / `Cmd + Shift + X` on macOS).
    - Search for **GitHub Pull Requests and Issues** and install it.
    - Alternatively, install it directly from [VS Code Extensions](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
-4. **Authenticate GitHub in VS Code**
+5. **Authenticate GitHub in VS Code**
    - Open VS Code and navigate to:
      ```
      View > Command Palette (Ctrl + Shift + P / Cmd + Shift + P on macOS)
      ```
    - Search for **"GitHub: Sign in to GitHub"** and follow the prompts.
 
-5. **Clone a GitHub Repository into VS Code**
+6. **Clone a GitHub Repository into VS Code**
    - Open VS Code and open the **Command Palette**.
    - Select **"Git: Clone"** and enter the repository URL from GitHub.  (Example Repo Link: https://github.com/Laurea-amk-Leppavaara/github-starter-space)
    - Choose a local folder to save the repository and start coding.
