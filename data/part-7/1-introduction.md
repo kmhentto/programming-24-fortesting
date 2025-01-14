@@ -35,14 +35,31 @@ GitHub is the version control tool we will use throughout this course. To get st
 
 Once you have familiarized yourself with the basics, follow these steps:
 
-### 1. **Sign up for a GitHub account using your Laurea email address**
+### 1. **Sign up for a GitHub account**
+
+If you already have a **GitHub account**, you can sign in and if you don't have one, you can create a new GitHub account by following the instructions below:
+
+  1. Go to [GitHub Sign up Page](https://github.com/signup)
+  2. Fill in the Sign Up form.
+  3. Verify your Email address. GitHub will send a verification email to the email address you provided. Go to your email inbox, find the email from GitHub, and click the verification link.
+
+> Congratulations! Once your email is verified, your account is ready. You can now start using GitHub to create repositories, contribute to projects and collaborate with others.
+
+### 2. **Link your Laurea Email**
+
 Using your Laurea email gives you access to additional paid features like **GitHub Codespaces** and **GitHub Copilot** for free.
 
-- Go to [GitHub.com](https://github.com) and click **Sign up** (top left).
-- Follow the prompts to create your personal account.
-- If you already have a GitHub account and want to create a new one, sign out first.
+ ***You are required to link your school email to your personal GitHub account. Please follow the instructions below:***
 
-### 2. **Check if your GitHub Student Developer Pack is activated**
+1. Login to GitHub using your personal account.
+2. Once logged in, go to your [GitHub account settings](https://github.com/settings/emails).
+3. In the left sidebar of the Settings page, click on "Emails."
+4. In the "Primary email address" section, you should see your personal email address associated with your account. Below that, you can click on the "Add email address" button to add your school email address.
+5. GitHub will send a verification email to your school email address. Check your school inbox, open the email, and click on the verification link provided.
+
+  Now, you'll have both your personal email and school email associated with your GitHub account. You can choose which email to use when making commits or changes.
+
+### 3. **Check if your GitHub Student Developer Pack is activated**
 
 To see if your Student Pack is active:
 
