@@ -3,7 +3,7 @@ const courseSettings = {
   siteUrl: "https://dipaish.github.io/programming-24",
   githubUrl: "https://github.com/dipaish/programming-24",
   subtitle: "Python",
-  slug: "laurea-python-english-2025",
+  slug: "programming-24",
   organizationName: "MOOC",
   tmcCourse: "programming-25",
   quizzesId: "e0625f9b-626a-4941-afda-6c6e1b577045",
