@@ -6,7 +6,7 @@ const courseSettings = {
   subtitle: "Python",
   slug: "laurea-python-english-2025",
   organizationName: "laurea",
-  tmcCourse: "Fundamentals of Programming - Python",
+  tmcCourse: "programming-25",
   quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
