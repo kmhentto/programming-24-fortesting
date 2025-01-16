@@ -1,9 +1,10 @@
-name: "Fundamentals of Programming",
+const courseSettings = {
+  name: "Fundamentals of Programming",
   siteUrl: "https://dipaish.github.io/programming-24",
   githubUrl: "https://github.com/dipaish/programming-24",
   subtitle: "Python",
   slug: "laurea-python-english-2025",
-  organizationName: "laurea",
+  organizationName: "LAUREA",
   tmcCourse: "laurea-python-english-2025",
   quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
   tmcOrganization: "mooc",
@@ -29,5 +30,4 @@ name: "Fundamentals of Programming",
     // },
   ],
 }
-
 module.exports = courseSettings
