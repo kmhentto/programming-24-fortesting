@@ -1,6 +1,4 @@
-const courseSettings = {
-  language: "en",
-  name: "Fundamentals of Programming",
+name: "Fundamentals of Programming",
   siteUrl: "https://dipaish.github.io/programming-24",
   githubUrl: "https://github.com/dipaish/programming-24",
   subtitle: "Python",
@@ -8,10 +6,14 @@ const courseSettings = {
   organizationName: "laurea",
   tmcCourse: "laurea-python-english-2025",
   quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
-  tmcOrganization: "laurea",
+  tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   showExerciseDescriptionWhenNotLoggedIn: true,
   courseVariants: [
+    {
+      tmcOrganization: "hbc",
+      tmcCourse: "python-TVT24Eng"
+    },
     {
       tmcOrganization: "insviladegracia",
       tmcCourse: "python-viladegracia-2024"
