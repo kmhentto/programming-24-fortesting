@@ -4,13 +4,17 @@ const courseSettings = {
   githubUrl: "https://github.com/dipaish/programming-24",
   subtitle: "Python",
   slug: "laurea-python-english-2025",
-  organizationName: "LAUREA",
-  tmcCourse: "laurea-python-english-2025",
-  quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
+  organizationName: "MOOC",
+  tmcCourse: "programming-25",
+  quizzesId: "e0625f9b-626a-4941-afda-6c6e1b577045",
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   showExerciseDescriptionWhenNotLoggedIn: true,
   courseVariants: [
+    {
+      tmcOrganization: "laurea",
+      tmcCourse: "laurea-python-english-2025"
+    },
     {
       tmcOrganization: "hbc",
       tmcCourse: "python-TVT24Eng"
@@ -19,10 +23,7 @@ const courseSettings = {
       tmcOrganization: "insviladegracia",
       tmcCourse: "python-viladegracia-2024"
     },
-    {
-      tmcOrganization: "laurea",
-      tmcCourse: "laurea-python-english-2025"
-    },
+
     // {
     //   tmcOrganization: "hbc",
     //   tmcCourse: "python-TVT21A",
