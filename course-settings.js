@@ -13,6 +13,14 @@ const courseSettings = {
   showExerciseDescriptionWhenNotLoggedIn: true,
   courseVariants: [
     {
+      tmcOrganization: "hbc",
+      tmcCourse: "python-TVT24Eng"
+    },
+    {
+      tmcOrganization: "insviladegracia",
+      tmcCourse: "python-viladegracia-2024"
+    },
+    {
       tmcOrganization: "laurea",
       tmcCourse: "laurea-python-english-2025"
     }
