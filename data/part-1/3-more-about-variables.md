@@ -14,12 +14,6 @@ After this section
 
 </text-box>
 
-Please fill in this questionnaire before getting started with this section. You will get one exercise point for answering.
-
-<quiz id="5f930565-c71e-50cc-89f2-eb410d7b8a9d"></quiz>
-
-
-
 Variables are needed for various purposes in programming. You can use variables to store any information that will be needed later in the program's execution.
 
 In Python programming variables are created like so:
