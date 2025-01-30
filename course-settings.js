@@ -7,7 +7,7 @@ const courseSettings = {
   slug: "laurea-python-laurea-spring-2025-Katja-Deepak",
   organizationName: "laurea",
   tmcCourse: "laurea-python-laurea-spring-2025-Katja-Deepak",
-  quizzesId: "e0625f9b-626a-4941-afda-6c6e1b577045",
+  quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
   tmcOrganization: "laurea",
   bannerPath: "banner.svg",
   showExerciseDescriptionWhenNotLoggedIn: true,
