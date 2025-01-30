@@ -4,7 +4,7 @@ const courseSettings = {
   siteUrl: "https://dipaish.github.io/programming-24/",
   githubUrl: "https://github.com/dipaish/programming-24",
   subtitle: "Fundamentals of Programming - Python",
-  slug: "laurea-python-laurea-spring-2025-Katja-Deepak",
+  slug: "python-laurea-spring-2025-Katja-Deepak",
   organizationName: "laurea",
   tmcCourse: "python-laurea-spring-2025-Katja-Deepak",
   quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
