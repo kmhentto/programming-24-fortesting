@@ -105,10 +105,6 @@ const Footer = ({ t }) => {
                   © {new Date().getFullYear()} Apache License, Version 2.0 & Creative Commons BY-NC-SA 4.0
                 </a>
             </div>
-            <div>
-              <p>his content has been tailored for the Fundamentals of Programming course at Laurea University of Applied Sciences by:<a href="https://github.com/dipaish" target="_blank" rel="noopener noreferrer">Deepak Chhetri</a> and <a href="https://github.com/kmhentto" target="_blank" rel="noopener noreferrer">Katja Henttonen</a></p>
-            </div>
-
           </StyledCardContent>
         </StyledCard>
 
