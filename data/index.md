@@ -11,7 +11,7 @@ During this course, you will learn the basics of computer programming through Py
 
 **You can only learn to code by coding.**
 
-The course is based on the programming MOOC (massive open online course) by the University of Helsinki which has been adapted for the needs of the Fundamentals of Programming Course at Laurea University of Applied Sciences by:[Deepak Chhetri](https://github.com/dipaish)and [Katja Henttonen](https://github.com/kmhentto)
+The course is based on the programming MOOC (massive open online course) by the University of Helsinki which has been adapted for the needs of the Fundamentals of Programming Course at Laurea University of Applied Sciences by: [Deepak Chhetri ](https://github.com/dipaish) and [Katja Henttonen](https://github.com/kmhentto)
 
 > The original course material is available [here](https://programming-24.mooc.fi/).
 
