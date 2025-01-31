@@ -97,6 +97,30 @@ const Footer = ({ t }) => {
             </GithubContainer>
           </StyledCardContent>
         </StyledCard>
+        <StyledCard>
+          <StyledCardContent>
+            <ContentContainer>
+              <p>© {new Date().getFullYear()} {CourseSettings.name}</p>
+              <p>
+                <a
+                  href="https://github.com/dipaish/programming-24/blob/main/license.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apache License, Version 2.0 & Creative Commons BY-NC-SA 4.0
+                </a>
+              </p>
+            </ContentContainer>
+          </StyledCardContent>
+        </StyledCard>
+        <StyledCard>
+          <StyledCardContent>
+            <ContentContainer>
+              <p>This content has been tailored for the Fundamentals of Programming course at Laurea University of Applied Sciences by </p>
+              <p>: <a href="https://github.com/dipaish" target="_blank" rel="noopener noreferrer">Deepak Chhetri</a> and <a href="https://github.com/kmhentto" target="_blank" rel="noopener noreferrer">Katja Henttonen</a></p>
+            </ContentContainer>
+          </StyledCardContent>
+        </StyledCard>
       </FooterContent>
     </FooterWrapper>
   )
