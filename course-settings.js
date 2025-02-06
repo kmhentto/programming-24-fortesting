@@ -9,7 +9,7 @@ const courseSettings = {
   tmcCourse: "python-laurea-spring-2025-Katja-Deepak",
   quizzesId: "0a8162e8-133a-4fa8-b619-4125cb92c6e0",
   tmcOrganization: "laurea",
-  bannerPath: "banner.svg",
+  bannerPath: "banner.png",
   showExerciseDescriptionWhenNotLoggedIn: true,
   courseVariants: [
     // {
