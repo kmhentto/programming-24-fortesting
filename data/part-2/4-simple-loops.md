@@ -606,7 +606,6 @@ A quiz to review the contents of this section:
 <quiz id="63a51999-e525-5f1d-a333-b26392a5585b"></quiz>
 
 -->
+**You have reached the end of this section!**
 
-Please respond to a quick questionnaire on this week's materials.
-
-<quiz id="1346f801-2677-50d3-a0d4-a3cfd6e09ccf"></quiz>
+**You can check your current points from the blue blob in the bottom-right corner of the page.**
