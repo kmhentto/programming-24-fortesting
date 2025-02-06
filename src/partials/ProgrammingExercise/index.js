@@ -79,6 +79,7 @@ class ProgrammingExercise extends React.Component {
       exerciseDetails = await fetchProgrammingExerciseDetails(this.props.tmcname)
       if (exerciseDetails) {
         exerciseDetails = exerciseDetails.filter(exercise => !exercise.disabled)
+      }
     }
     } catch (error) {
       console.error(error)
