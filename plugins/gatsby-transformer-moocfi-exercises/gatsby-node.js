@@ -23,27 +23,15 @@ function getMatches(string, regex, index) {
   return matches
 }
 
+const { fetchProgrammingExerciseDetails } = require("../../services/moocfi") // Import API call
+const { GraphQLList, GraphQLObjectType, GraphQLString } = require("gatsby/graphql")
+
 const ExerciseType = new GraphQLObjectType({
   name: `Exercise`,
   fields: {
-    id: {
-      type: GraphQLString,
-      resolve(details) {
-        return details.id
-      },
-    },
-    type: {
-      type: GraphQLString,
-      resolve(details) {
-        return details.type
-      },
-    },
-    parentPagePath: {
-      type: GraphQLString,
-      resolve(details) {
-        return details.parentPagePath
-      },
-    },
+    id: { type: GraphQLString },
+    type: { type: GraphQLString },
+    parentPagePath: { type: GraphQLString },
   },
 })
 
@@ -52,17 +40,51 @@ exports.setFieldsOnGraphQLNodeType = ({ type }) => {
     return {
       moocfiExercises: {
         type: GraphQLList(ExerciseType),
-        resolve: (node, _fieldArgs) => {
-          // nuke commented text
+        resolve: async (node, _fieldArgs) => {
+          // Remove comments from Markdown content
           const source = (node.rawMarkdownBody || "").replace(commentRegex, "")
-          const quizzes = getMatches(source, quizRegex, 1).map(res => {
-            return {
-              id: res.match,
-              location: res.location,
-              type: "quiz",
-              parentPagePath: node.frontmatter.path,
-            }
-          })
+
+          const programmingExercises = await Promise.all(
+            getMatches(source, programmingExerciseTagRegex, 1).map(async (res) => {
+              let id = "unknown"
+              try {
+                const match = getMatches(res.match, programmingExerciseNameRegex, 1)[0].match
+                id = match.substring(1, match.length - 1) // Fix: Corrected substring extraction
+              } catch (e) {
+                console.error(`Error extracting exercise name: ${e}`)
+              }
+
+              // Fetch Exercise Details
+              let exerciseDetails = {}
+              try {
+                exerciseDetails = await fetchProgrammingExerciseDetails(id)
+              } catch (err) {
+                console.error(`Error fetching exercise details for ${id}:`, err)
+              }
+
+              // Skip disabled exercises
+              if (exerciseDetails?.disabled) {
+                console.log(`Skipping disabled exercise: ${id}`)
+                return null
+              }
+
+              return {
+                id,
+                location: res.location,
+                type: "programming-exercise",
+                parentPagePath: node.frontmatter.path,
+              }
+            })
+          )
+
+          //  Remove null values (disabled exercises)
+          return programmingExercises.filter(Boolean)
+        },
+      },
+    }
+  }
+  return {}
+}
           const programmingExercises = getMatches(
             source,
             programmingExerciseTagRegex,
