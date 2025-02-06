@@ -42,12 +42,12 @@ exports.setFieldsOnGraphQLNodeType = ({ type }) => {
               let id = "unknown"
               try {
                 const match = getMatches(res.match, programmingExerciseNameRegex, 1)[0].match
-                id = match.substring(1, match.length - 1) // Fix substring extraction
+                id = match.substring(1, match.length - 1) 
               } catch (e) {
                 console.error(`Error extracting exercise name: ${e}`)
               }
 
-              //  Fetch Exercise Details
+              // ✅ Fetch Exercise Details
               let exerciseDetails = {}
               try {
                 exerciseDetails = await fetchProgrammingExerciseDetails(id)
@@ -55,7 +55,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type }) => {
                 console.error(`Error fetching exercise details for ${id}:`, err)
               }
 
-              // Skip disabled exercises
+              // ✅ Skip disabled programming exercises
               if (exerciseDetails?.disabled) {
                 console.log(`Skipping disabled exercise: ${id}`)
                 return null
@@ -70,17 +70,59 @@ exports.setFieldsOnGraphQLNodeType = ({ type }) => {
             })
           )
 
-          //  Remove null values (disabled exercises)
-          return programmingExercises.filter(Boolean)
+          // ✅ Add back other exercise types (quizzes, crowdsorcerers, moodles, SQL trainers)
+          const quizzes = getMatches(source, quizRegex, 1).map(res => ({
+            id: res.match,
+            location: res.location,
+            type: "quiz",
+            parentPagePath: node.frontmatter.path,
+          }))
+
+          const inBrowserProgrammingExercises = getMatches(
+            source,
+            inBrowserProgrammingExerciseTagRegex,
+            1,
+          ).map(res => ({
+            id: res.match,
+            location: res.location,
+            type: "programming-exercise",
+            parentPagePath: node.frontmatter.path,
+          }))
+
+          const crowdsorcerers = getMatches(source, crowdsorcererRegex, 1).map(res => ({
+            id: res.match,
+            location: res.location,
+            type: "crowdsorcerer",
+            parentPagePath: node.frontmatter.path,
+          }))
+
+          const moodles = getMatches(source, moodleRegex, 1).map(res => ({
+            id: res.match,
+            location: res.location,
+            type: "moodle-exercise",
+            parentPagePath: node.frontmatter.path,
+          }))
+
+          const sqlTrainers = getMatches(source, sqlTrainerRegex, 1).map(res => ({
+            id: res.match,
+            location: res.location,
+            type: "sqltrainer-exercise",
+            parentPagePath: node.frontmatter.path,
+          }))
+
+          // ✅ Merge all exercise types (only programming exercises are filtered)
+          return programmingExercises
+            .filter(Boolean) // Remove disabled programming exercises
+            .concat(quizzes)
+            .concat(crowdsorcerers)
+            .concat(moodles)
+            .concat(sqlTrainers)
+            .concat(inBrowserProgrammingExercises)
+            .sort((a, b) => a.location - b.location) // Sort by location
         },
       },
     }
   }
 
-  return {}
-}
-
-
-  // by default return empty object
   return {}
 }
