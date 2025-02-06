@@ -1,9 +1,9 @@
 const courseSettings = {
   language: "en",
   name: "Laurea University of Applied Sciences",
-  siteUrl: "https://dipaish.github.io/programming-24/",
-  githubUrl: "https://github.com/dipaish/programming-24",
-  subtitle: "Fundamentals of Programming - Python",
+  siteUrl: "https://kmhentto.github.io/programming-24-fortesting/",
+  githubUrl: "https://github.com/kmhentto/programming-24-fortesting",
+  subtitle: "TESTING PAGE ONLY",
   slug: "laurea-python-laurea-spring-2025-Katja-Deepak",
   organizationName: "laurea",
   tmcCourse: "python-laurea-spring-2025-Katja-Deepak",
